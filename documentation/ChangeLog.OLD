@@ -1818,7 +1818,7 @@ Wed Jun 17 11:16:54 1998  David Luyer <luyer@ucs.uwa.edu.au>
 
 	* [relay32/relay386.c] [if1632/relay.c]
 	Move debug_relay_(include|exclude)_list handling into
-	seperate function RELAY_ShowDebugmsgsRelay().  Include
+	separate function RELAY_ShowDebugmsgsRelay().  Include
 	checking of this for 16 bit calls (originally only
 	32-bit calls).
 
@@ -4466,7 +4466,7 @@ Wed Nov 12 03:42:45 1997  Chris Faherty <chrisf@america.com>
 
 	* [misc/ver.c]
 	Changed VerInstall32A to assume srcdir as destination if destdir
-	is blank.  This was causing alot of DLL installation into SYSTEM
+	is blank.  This was causing a lot of DLL installation into SYSTEM
 	directory to fail.
 
 	* [loader/ne_image.c]
@@ -5106,7 +5106,7 @@ Thu Aug 28 19:30:08 1997  Morten Welinder  <terra@diku.dk>
 Sun Aug 24 16:22:57 1997  Andrew Taylor <ataylor@cadvision.com>
 
 	* [multimedia/mmsystem.c]
-	Changed mmioDescend to use mmio functions for file I/O, neccessary
+	Changed mmioDescend to use mmio functions for file I/O, necessary
 	for memory files.
 
 ----------------------------------------------------------------------
@@ -13037,7 +13037,7 @@ Fri Mar 31 03:27:16 EST 1995 William Magro (wmagro@tc.cornell.edu)
 
 	* [controls/edit.c]
 	Lots of bug fixes related to diappearing text, lost carets,
-	highlighting, segmentation faults, occurance of random
+	highlighting, segmentation faults, occurrence of random
 	characters, insertion of characters over selection, misplaced
 	caret location, display corruption, end of line behavior, etc.
 
@@ -13794,7 +13794,7 @@ Sun Nov  6 18:22:18 1994  Michael Patra  <micky@marie.physik.tu-berlin.de>
 	LocalInit(): The case start==0 is now handled in the way it should.
 
 	* [windows/win.c]
-	GetWindowLong(): If the adress of the windows function is requested
+	GetWindowLong(): If the address of the windows function is requested
 	it's no longer returned if it's within the Wine code (and therefore
 	unreachable by a windows program). This makes Borland's OWL happy.
 
@@ -14276,7 +14276,7 @@ Sun Aug 21 21:12:06 MET DST 1994	<erik@xs4all.nl>
 Thu Aug 25 15:24:36 EDT 1994            <jrichard@cs.uml.edu>
 
         * [include/win.h]
-        Removed seperate X window for icon, added icon width,height.
+        Removed separate X window for icon, added icon width,height.
 
 	* [include/windows.h]
 	Commented out the old SW_xxx emum and added defines since
@@ -14318,7 +14318,7 @@ Thu Aug 25 15:24:36 EDT 1994            <jrichard@cs.uml.edu>
         unless it has to (no icon for this class).
         
         * [windows/win.c]
-        Removed creation of seperate icon window from CreateWindowEx().
+        Removed creation of separate icon window from CreateWindowEx().
         
         * [windows/winpos.c]
         Added saving and restoring of window rectangle during
@@ -15001,7 +15001,7 @@ Sat Jun 11 19:05:40 1994  Olaf Flebbe  (flebbe@tat.physik.uni-tuebingen.de)
 
         * include/windows.h:
           functions pointers can not be packed.
-          (annoying warnings with forthcomming gcc-2.6.x)
+          (annoying warnings with forthcoming gcc-2.6.x)
         
         * loader/main.c (InitDLL): 
           Fixed a printf statement. (for control.exe) 
@@ -15135,7 +15135,7 @@ Sun Jun  5 19:17:49 1994  Olaf Flebbe  (olaf@dragon)
         * [edit.c]
         cp1 was uninitialized iff lineno == 0
 
-        *  FindFile tests for existance of file even if a full
+        *  FindFile tests for existence of file even if a full
            filename was supplied. What about unix file names?
 
         * [controls/listbox ]
@@ -15168,7 +15168,7 @@ Wed May 25 21:55:38 1994  Bob Amstadt  (bob@pooh)
 	fixed creation of pop.h to guarantee that flags are restored correctly.
 
 	* [misc/comm.c]
-	changed all occurance of strncmp() to strncasecmp().
+	changed all occurrence of strncmp() to strncasecmp().
 	BuildCommDCB() should not require that OpenComm() be called first.
 
 	* [loader/selector.c]
@@ -15704,7 +15704,7 @@ Apr 4, 94 martin2@trgcorp.solucorp.qc.ca (Martin Ayotte)
 
 	* [control/menu.c]
 	Make mouse menu navigation working again. :-))
-	(be carefull, clicking outside menus (ie.: clientrect) 
+	(be careful, clicking outside menus (ie.: clientrect) 
 	not resolved yet)
 
 	* [windows/nonclient.c]  [controls/scroll.c]
@@ -16246,7 +16246,7 @@ Tue Feb 22 15:01:31 EST 1994    jrichard@cs.uml.edu (John Richardson)
         inefficent, but should suffice for now.
 
         * [include/windows.h]
-        Changed the x,y paramaters for the FloodFill prototype 
+        Changed the x,y parameters for the FloodFill prototype 
         from ints to shorts
 
 Tue Feb 22 00:58:28 MET 1994  julliard@di.epfl.ch (Alexandre Julliard)

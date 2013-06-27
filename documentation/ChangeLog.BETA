@@ -4902,7 +4902,7 @@
 	imm32: Fix a typo.
 
 	* dlls/imm32/imm.c:
-	imm32: ImmGetVirtualKey return orignal virtual key value.
+	imm32: ImmGetVirtualKey return original virtual key value.
 
 	* dlls/imm32/imm.c:
 	imm32: Reconstruct the ImmProcessKey, ImmTranslateMessage for the VK_PROCESSKEY.
@@ -5583,7 +5583,7 @@
 	  dlls/quartz/parser.h, dlls/quartz/pin.c, dlls/quartz/pin.h,
 	  dlls/quartz/waveparser.c:
 	quartz: Make wave parser and mpeg splitter zero copy by getting rid of the
-	seperate allocator for the output pin.
+	separate allocator for the output pin.
 
 	* dlls/quartz/filesource.c:
 	quartz: Add some sanity checks to file splitter.
@@ -5998,7 +5998,7 @@
 2008-04-21  Steven Edwards <winehacker@gmail.com>
 
 	* dlls/rpcrt4/cstub.c:
-	rpcrt4: Correct the number of aguments for fill_method on unsupported
+	rpcrt4: Correct the number of arguments for fill_method on unsupported
 	architectures.
 
 2008-04-21  Dmitry Timoshkov <dmitry@codeweavers.com>
@@ -8003,7 +8003,7 @@
 	* dlls/quartz/mpegsplit.c:
 	quartz: Make mpeg splitter keep track of play position and keep last sample
 	if sending was not successful.
-	This fixes data discontinuities that earlier occured after a
+	This fixes data discontinuities that earlier occurred after a
 	stop/pause command or the downright rejection of a sample (S_FALSE).
 
 2008-04-08  Alexandre Julliard <julliard@winehq.org>
@@ -12920,7 +12920,7 @@
 	  tools/make_makefiles:
 	makefiles: Simplify the use of the MODULE variable in static import libraries.
 	Don't include platform-specific information when declaring the name of
-	the static import libary to build. Instead, add this information in
+	the static import library to build. Instead, add this information in
 	Makeimplib.rules.in.
 
 	* dlls/secur32/ntlm.c:
@@ -20471,7 +20471,7 @@
 
 	* tools/widl/typegen.c:
 	widl: Fix context handle "cannot be null" detection.
-	The "cannot be null" attibute is applied to a parameter if and only if
+	The "cannot be null" attribute is applied to a parameter if and only if
 	it is in-only.
 
 2008-01-06  Rob Shearman <rob@codeweavers.com>
@@ -28380,7 +28380,7 @@
 2007-10-30  Chris Wulff <crwulff@rochester.rr.com>
 
 	* dlls/hal/Makefile.in, dlls/hal/hal.c, dlls/hal/hal.spec:
-	hal: Added stubs for KfAquireSpinLock, KfReleaseSpinLock, KfLowerIrql,
+	hal: Added stubs for KfAcquireSpinLock, KfReleaseSpinLock, KfLowerIrql,
 	KfRaiseIrql.
 
 	* dlls/kernel32/kernel32.spec, dlls/kernel32/volume.c:
@@ -32127,7 +32127,7 @@
 
 	* dlls/wineoss.drv/audio.c, dlls/wineoss.drv/audio.h,
 	  dlls/wineoss.drv/dscapture.c, dlls/wineoss.drv/dsrender.c:
-	wineoss: Seperate wave-in and wave-outs shared use of a single OSS_DEVICE struct.
+	wineoss: Separate wave-in and wave-outs shared use of a single OSS_DEVICE struct.
 
 	* dlls/dsound/capture.c:
 	dsound: Call waveInUnPrepareHeader and waveInPrepareHeader when submitting
@@ -49529,7 +49529,7 @@
 2007-05-05  Maarten Lankhorst <m.b.lankhorst@gmail.com>
 
 	* dlls/winmm/time.c:
-	winmm: Use criticalsection for determining wether timer is synchronously
+	winmm: Use criticalsection for determining whether timer is synchronously
 	killable.
 
 2007-05-06  Bernard Ladenthin <bernard@ladenthin.net>
@@ -50212,7 +50212,7 @@
 2007-04-23  Stefan Dösinger <stefan@codeweavers.com>
 
 	* dlls/ddraw/ddraw.c:
-	ddraw: Move the additional surface creation into a seperate function.
+	ddraw: Move the additional surface creation into a separate function.
 
 	* dlls/ddraw/surface.c:
 	ddraw: Do not access the surface connection structure directly in SetPalette.
@@ -51185,7 +51185,7 @@
 	Instead of creating a converted declaration each time SetFVF is
 	called, exactly one declaration is created for each FVF(on demand) and
 	stored for the lifetime of the device. This avoids memory leaks and
-	makes keeping track of converted declarations easier. Wether a
+	makes keeping track of converted declarations easier. Whether a
 	declaration is converted from a fvf or not is now a static information
 	inside the declaration. Those declarations are not destroyed in
 	VertexDeclaration::Release, they stay for the lifetime of the
@@ -51447,7 +51447,7 @@
 
 	* dlls/secur32/base64_codec.c, dlls/secur32/dispatcher.c,
 	  dlls/secur32/ntlm.c, dlls/secur32/util.c:
-	secur32: Move NTLM debug output to a seperate "ntlm" channel.
+	secur32: Move NTLM debug output to a separate "ntlm" channel.
 
 2007-04-13  Francois Gouget <fgouget@codeweavers.com>
 
@@ -54405,7 +54405,7 @@
 
 	* dlls/wined3d/device.c, dlls/wined3d/surface.c:
 	wined3d: Blitting to offscreen target.
-	Fix the NULL deref that occured when blitting to offscreen targets and
+	Fix the NULL deref that occurred when blitting to offscreen targets and
 	select the proper gl drawing buffer instead.
 
 2007-03-14  Mikołaj Zalewski <mikolaj@zalewski.pl>
@@ -65313,7 +65313,7 @@
 2006-12-10  Roderick Colenbrander <thunderbird2k@gmx.net>
 
 	* dlls/winex11.drv/opengl.c:
-	wgl: Make the WGL code independant of the number of supported pixel formats.
+	wgl: Make the WGL code independent of the number of supported pixel formats.
 
 2006-12-10  Chris Robinson <chris.kcat@gmail.com>
 
@@ -74522,7 +74522,7 @@
 
 	* dlls/mshtml/mshtml_private.h, dlls/mshtml/nsembed.c,
 	  dlls/mshtml/nsiface.idl, dlls/mshtml/persist.c:
-	mshtml: Added begining implementation of IPersistStreamInit::Save.
+	mshtml: Added beginning implementation of IPersistStreamInit::Save.
 
 	* dlls/mshtml/nsembed.c:
 	mshtml: Code cleanup.
@@ -78408,7 +78408,7 @@
 
 	* dlls/comctl32/theme_dialog.c, dlls/comctl32/theme_edit.c,
 	  dlls/comctl32/theme_listbox.c:
-	comctl32: Remove unneccessary default debug channels.
+	comctl32: Remove unnecessary default debug channels.
 
 2006-08-25  Jan Zerebecki <jan.wine@zerebecki.de>
 
@@ -86039,7 +86039,7 @@
 	* programs/oleview/En.rc, programs/oleview/main.h,
 	  programs/oleview/oleview.c, programs/oleview/resource.h,
 	  programs/oleview/tree.c:
-	oleview: Added base menu funcionality.
+	oleview: Added base menu functionality.
 
 	* programs/oleview/En.rc, programs/oleview/main.h,
 	  programs/oleview/oleview.c, programs/oleview/resource.h,
@@ -88446,7 +88446,7 @@
 	taskmgr: Use correct types for Win64.
 
 	* programs/hh/main.c:
-	hh: Cast GetProcAddress's return to supress a Win64 warning.
+	hh: Cast GetProcAddress's return to suppress a Win64 warning.
 
 	* programs/winetest/gui.c:
 	winetest: Fix dialog prototypes.
@@ -88598,7 +88598,7 @@
 	mshtml: Added beginning OnDataAvailable implementation.
 
 	* dlls/mshtml/navigate.c, dlls/mshtml/persist.c:
-	mshtml: Added begining binding code in IPersistMoniker::Load.
+	mshtml: Added beginning binding code in IPersistMoniker::Load.
 
 	* dlls/mshtml/mshtml_private.h, dlls/mshtml/navigate.c,
 	  dlls/mshtml/nsiface.idl, dlls/mshtml/nsio.c:
@@ -98159,7 +98159,7 @@
 
 	* dlls/dbghelp/msc.c:
 	dbghelp: Type parsing refactoring.
-	- seperate types' table handling from a single type handling
+	- separate types' table handling from a single type handling
 	by adding codeview_parse_one_type function
 	- factored all calls for caching symt
 	- make type parsing helpers return the symt instead of a
@@ -103267,7 +103267,7 @@
 2006-01-27  Dmitry Timoshkov <dmitry@codeweavers.com>
 
 	* dlls/user/scroll.c:
-	user: Postpone resetting SCROLL_TrackingWin untill all notifications are sent.
+	user: Postpone resetting SCROLL_TrackingWin until all notifications are sent.
 
 2006-01-27  Eric Pouech <eric.pouech@wanadoo.fr>
 
@@ -105065,7 +105065,7 @@
 	  dlls/riched20/run.c:
 	riched20: Speed up text insertion.
 	Optimized reading large texts into RichEdit to be an O(n) order
-	algorythm instead of O(n^2) by removing extraneous conversions of
+	algorithm instead of O(n^2) by removing extraneous conversions of
 	character offsets to run offsets.
 
 2006-01-10  Mike McCormack <mike@codeweavers.com>
